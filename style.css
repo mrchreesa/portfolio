@@ -65,6 +65,22 @@ h1 {
   position: relative;
   width: max-content;
 }
+.scroll {
+  margin-bottom: 45vh;
+  display: flex;
+  width: max-content;
+
+  align-items: flex-end;
+
+  /* animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 7s; */
+
+  transform: translateY(3rem);
+  animation: fadeIn 2s ease 8s forwards;
+  opacity: 0;
+}
 .line1::before,
 .line1::after {
   margin-block: -6px;
@@ -96,6 +112,7 @@ h1 {
     opacity: 1;
   }
 }
+
 .line2::before,
 .line2::after {
   margin-block: -6px;
@@ -217,9 +234,21 @@ section {
   background: var(--dark-bg);
   font-size: 1.25rem;
   line-height: 1.5;
-  margin-bottom: var(--spacing);
+  margin-bottom: 2rem;
 }
-
+section img {
+  width: 100%;
+  padding-bottom: 10px;
+  border-radius: 5px;
+}
+.livePreview a {
+  color: rgb(171, 161, 209);
+  letter-spacing: 5px;
+}
+.livePreview a:hover {
+  color: white;
+  transition: all 0.5s;
+}
 blockquote {
   margin: 0;
   padding: 0;
