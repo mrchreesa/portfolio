@@ -12,8 +12,11 @@
   </a>
 </p>
     My portfolio is build in Vite with JavaScript 3D Library Three.js. Scrolling down you will find a showcase of my projects.
+    <br/>
     - First being [Nutri-Tracker App](https://github.com/mrchreesa/nutri-tracker-app-frontend). Its a full stack application build with the MERN stack. 
+    <br/>
     - Second is [AirBnB Clone](https://github.com/mrchreesa/airbnb-frontend) which is a clone of the property website AirBnB. It's build with Next.js and Sanity.io for CMS. 
+    <br/>
     - Lastly is [E-commerce page](https://github.com/mrchreesa/ecommerce-app). In there I've integrated interactive user experience as well as dark and light themes.
 
 <img align="center" src="./preview three.png" alt="preview page" />
