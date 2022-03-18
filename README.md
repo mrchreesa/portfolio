@@ -1,4 +1,4 @@
-<h1 align="center">Welcome my Portfolio 👋</h1>
+<h1 align="center">Welcome to my Portfolio 👋</h1>
 <p>
   <a href="https://github.com/mrchreesa/portfolio" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
@@ -11,7 +11,10 @@
   <img alt="Twitter: mrchreesa" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
   </a>
 </p>
-    My portfolio is build with JavaScript 3D Library Three.js. Scrolling down you will find a showcase of my projects. First being [Nutri-Tracker App](https://github.com/mrchreesa/nutri-tracker-app-frontend). Its a full stack application build with the MERN stack. Second is [AirBnB Clone](https://github.com/mrchreesa/airbnb-frontend) which is a clone of the property website AirBnB. It's build with Next.js and Sanity.io for CMS. Lastly is [E-commerce page](https://github.com/mrchreesa/ecommerce-app). In there I've integrated interactive user experience as well as dark and light themes.
+    My portfolio is build in Vite with JavaScript 3D Library Three.js. Scrolling down you will find a showcase of my projects.
+    - First being [Nutri-Tracker App](https://github.com/mrchreesa/nutri-tracker-app-frontend). Its a full stack application build with the MERN stack. 
+    - Second is [AirBnB Clone](https://github.com/mrchreesa/airbnb-frontend) which is a clone of the property website AirBnB. It's build with Next.js and Sanity.io for CMS. 
+    - Lastly is [E-commerce page](https://github.com/mrchreesa/ecommerce-app). In there I've integrated interactive user experience as well as dark and light themes.
 
 <img align="center" src="./preview three.png" alt="preview page" />
 
@@ -28,6 +31,7 @@
 - Webpack
 - Git
 - GitHub
+- Vite
 </p>
 </br>
 
