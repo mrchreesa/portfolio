@@ -289,7 +289,7 @@ blockquote p {
     margin-left: 7px;
     font-size: 1.3rem;
   }
-  .section {
-    margin: 0px 12px 0px 5px;
+  section {
+    margin: 0px 12px 1rem 3px;
   }
 }
