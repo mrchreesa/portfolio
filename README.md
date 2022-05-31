@@ -11,7 +11,7 @@
   <img alt="Twitter: mrchreesa" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
   </a>
 </p>
-    My portfolio is build in Vite with JavaScript 3D Library Three.js. Scrolling down you will find a showcase of my projects.
+    My portfolio was build with Vite and JavaScript 3D Library Three.js. It has responsive design and interactive UI. Scrolling down you will find a showcase of my projects.
     <br/>
     - First being [Nutri-Tracker App](https://github.com/mrchreesa/nutri-tracker-app-frontend). Its a full stack application build with the MERN stack. 
     <br/>
