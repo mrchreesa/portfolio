@@ -222,14 +222,15 @@ canvas {
 
 header {
   background: var(--dark-bg);
-  grid-column: 2 / span 5;
+  grid-column: 2 / span 6;
   font-size: 2.5rem;
   padding: 2rem;
   margin-bottom: var(--spacing);
+  /* height: 45%; */
 }
 
 section {
-  grid-column: 2 / 8;
+  grid-column: 2 / 9;
   padding: 1rem;
   background: var(--dark-bg);
   font-size: 1.25rem;
@@ -267,7 +268,9 @@ blockquote p {
 .left {
   grid-column: 6 / 12;
 }
-
+.weather-img {
+  width: 49%;
+}
 @media (max-width: 468px) {
   main {
     display: inline !important;
