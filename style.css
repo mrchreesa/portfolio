@@ -296,39 +296,13 @@ blockquote p {
 .weather-img {
   width: 49%;
 }
-@media (max-width: 828px) {
-  main {
-      display: inline !important;
-    }
-  
-    .header {
-      height:40vh;
-width: 45%;
-      text-align: center;
-      margin-bottom: 0;
-      opacity: 0.9;
-    }
-  
-    .header h1 {
-      font-size: 4.5vw;
-      padding-bottom: 20px;
-      line-height: none;
-      height: 5%;
-    }
-  
-    .subtitle {
-      font-size: 3rem;
-    }
-            .scroll {
-              font-size: 2rem;
-            }
-}
+
 @media (max-width: 468px) {
   main {
     display: inline !important;
   }
   .header {
-    margin-top: 50%;
+    margin-top: 60%;
     text-align: center;    
     margin-bottom: 0;
     opacity: 0.9;
@@ -355,5 +329,33 @@ width: 45%;
   .empty-div{
     display: flex;
     width: 100%;
+  }
+}
+@media (max-width: 828px) and (min-width: 468px){
+  main {
+    display: inline !important;
+  }
+
+  .header {
+    height: 40vh;
+    width: 45%;
+    text-align: center;
+    margin-bottom: 0;
+    opacity: 0.9;
+  }
+
+  .header h1 {
+    font-size: 4.5vw;
+    padding-bottom: 20px;
+    line-height: none;
+    height: 5%;
+  }
+
+  .subtitle {
+    font-size: 3rem;
+  }
+
+  .scroll {
+    font-size: 2rem;
   }
 }
