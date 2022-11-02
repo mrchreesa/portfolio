@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet"  href='/loading.css' />
+    <link rel="stylesheet" href="/loading.css" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=BenchNine:wght@300;400;700&family=Press+Start+2P&display=swap"
       rel="stylesheet"
     />
-    <meta name="og:description" content="Kristian's Portfolio"/>
+    <meta name="og:description" content="Kristian's Portfolio" />
     <meta property="og:image" content="./images/portfolioImage.png" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.krisrahnev.com" />
@@ -27,155 +27,321 @@
       </div>
     </div>
     <main class="loading">
-      <header class="header" >
-        <h1 class="line1">&#60Hi, my</h1>
+      <header class="header">
+        <h1 class="line1">&#60; Hi, my</h1>
         <h1 class="line2">name is</h1>
         <h1 class="line3">Kristian</h1>
-        <h1 class="line4">Rahnev./&#62</h1>
+        <h1 class="line4">Rahnev./&#62;</h1>
         <p class="subtitle">I'm a Web Developer 🚀</p>
       </header>
       <h3 class="scroll">⬇️ Scroll down for projects ⬇️</h3>
-      
+
       <blockquote>
         <p>I like creating stuff and putting it on the internet</p>
       </blockquote>
-      <section>
-      <h2>👩🏽‍🚀 Projects</h2>
-
+      <section class="hidden">
+        <h2>👩🏽‍🚀 Projects</h2>
       </section>
-      <section>
-        <h2>🥗 Nutri-Tracker App</h2>
+      <section class="hidden">
+        <div class="section-heading">
+          <h2>🥗 Nutri-Tracker App</h2>
+          <div class="empty-div"></div>
+
+          <img class="dev-icon" src="./images/icons/html.png" alt="" />
+          <img class="dev-icon" src="./images/icons/css3.png" alt="" />
+          <img class="dev-icon" src="./images/icons/javascript.png" alt="" />
+          <img class="dev-icon" src="./images/icons/react.png" alt="" />
+          <img class="dev-icon" src="./images/icons/node-js.png" alt="" />
+          <img class="dev-icon" src="./images/icons/mongodb.png" alt="" />
+        </div>
         <div class="imagesPreview">
-        <img src="./images/preview 1.png" alt="preview" align="center" />
-        <img src="./images/preview 3.png" alt="preview" align="center" />
+          <img src="./images/preview 1.png" alt="preview" align="center" />
+          <img src="./images/preview 3.png" alt="preview" align="center" />
         </div>
-        <h2 align="center" class="livePreview"><a target=”_blank” href="https://nutri-tracker.krisrahnev.com">🖥LIVE SITE PREVIEW🖥</a>
+        <h2 align="center" class="livePreview">
+          <a target="”_blank”" href="https://nutri-tracker.krisrahnev.com"
+            >🖥LIVE SITE PREVIEW🖥</a
+          >
         </h2>
-        <h2 align="center" class="livePreview"> <a target=”_blank” href="https://github.com/mrchreesa/nutri-tracker-app-frontend">📜CODE PREVIEW📜</a></h2>
+        <h2 align="center" class="livePreview">
+          <a
+            target="”_blank”"
+            href="https://github.com/mrchreesa/nutri-tracker-app-frontend"
+            >📜CODE PREVIEW📜</a
+          >
+        </h2>
         <p>
-         Nutri-Tracker is an app that allows you to search through 30,000 foods with pictures and their 
-         nutritions. After registration or login, you can start the search of your desired foods. By clicking on individual
-         food you will see a dropdown menu with a graph showing all essential nutrients. Then you can choose to add the chosen food to you profile.
-         A summary of all the nutritions and foods added in a given day can be found by accessing you profile
-         from the icon in the top-left corner.
-         Happy Nutri-Tracking!
-
+          Nutri-Tracker is an app that allows you to search through 30,000 foods
+          with pictures and their nutritions. After registration or login, you
+          can start the search of your desired foods. By clicking on individual
+          food you will see a dropdown menu with a graph showing all essential
+          nutrients. Then you can choose to add the chosen food to you profile.
+          A summary of all the nutritions and foods added in a given day can be
+          found by accessing you profile from the icon in the top-left corner.
+          Happy Nutri-Tracking!
         </p>
-
-   
       </section>
-            <section>
-              <h2>🧢 E-Commerce Store</h2>
-              <div class="imagesPreview">
-                <img style="width:49%" src="./images/EComStore1.png" alt="preview" align="center" />
-                <img style="width:49%" src="./images/EComStore2.png" alt="preview" align="center" />
-                 <img style="width:49%" src="./images/EComStore3.png" alt="preview" align="center" />
-               <img style="width:49%" src="./images/EComStore4.png" alt="preview" align="center" />
-
-              </div>
-              <h2 align="center" class="livePreview"><a target=”_blank” href="https://e-commerce-store-omega.vercel.app/">🖥LIVE SITE
-                  PREVIEW🖥</a>
-              </h2>
-              <h2 align="center" class="livePreview"> <a target=”_blank”
-                  href="https://github.com/mrchreesa/e-commerce-store">📜CODE PREVIEW📜</a></h2>
-              <p>
-                E-Commerce Store is a web application built with Next.js as full stack framework, 
-                Hygraph CMS as headless content management system and Stripe as payment system API.
-                GraphQL is used as query language for fetching server-side props from the CMS. 
-                Fast user experience is ensured by server-side rendering by Next.js.
-                After entering to the product list page, the user can see all available products
-                provided by Hygraph. After selecting a product from the list, a product page is displayed
-                with the corresponding URL. The user then can select the style of the product and the desired quantity,
-                after that can add it to the cart. The updated cart component stays persistent if navigating to another
-                page and is saved to LocalStorage. After finishing the order, the user can click on the checkout button and will
-                navigated to Stripe checkout page where a transaction can take place. This web app is hosed on Vercel.
-              </p>
-            
-            
-            </section>
-      <section>
-        <h2>🏡 AirBnB Clone</h2>
+      <section class="hidden">
+        <div class="section-heading">
+          <h2>🕵🏼‍♂️ Coin Spy</h2>
+          <div class="empty-div"></div>
+          <img class="dev-icon" src="./images/icons/html.png" alt="" />
+          <img class="dev-icon" src="./images/icons/css3.png" alt="" />
+          <img class="dev-icon" src="./images/icons/typescript.png" alt="" />
+          <img class="dev-icon" src="./images/icons/react.png" alt="" />
+          <img class="dev-icon" src="./images/icons/firebase.png" alt="" />
+          <img class="dev-icon" src="./images/icons/MUI logo.png" alt="" />
+        </div>
         <div class="imagesPreview">
-          <img src="./images/preview 1 airbnb.png" alt="preview" align="center" />
-          <img src="./images/preview 2 airbnb.png" alt="preview" align="center" />
+          <img src="./images/coin-spy-1.png" alt="preview" align="center" />
+          <img src="./images/coin-spy-2.png" alt="preview" align="center" />
         </div>
-          <h2 align="center" class="livePreview"><a target=”_blank” href="https://airbnb-clone.krisrahnev.com">🖥LIVE SITE PREVIEW🖥</a>
-          </h2>
-          <h2 align="center" class="livePreview"> <a target=”_blank” href="https://github.com/mrchreesa/airbnb-frontend">📜CODE PREVIEW📜</a></h2>
-        <p>
-          AirBnB Clone as the name suggests is a clone of the property rental site AirBnB. 
-          I've followed the original design to the best of my abilities as a reference. Navigating from the landing page
-          you will see the properies list. All properties are being added throught the headless CMS of Sanity.io. 
-          After selecting a property of your choice, you will be taken to a page with all the necessary details of that property. 
-          There you can find a calendar to select the desired dates for your stay as well as a window which calculates the total cost.
-          On the bottom of the page is Google Maps location of your property.
-        </p>
-
-
-      </section>
-      <section>
-        <h2>🌤 Weather App</h2>
-        <div class="imagesPreview ">
-          <img class="weather-img" src="./images/weather-day.jpg" alt="preview"  />
-          <img class="weather-img" src="./images/weather-night.jpg" alt="preview"  />
-        </div>
-        <h2 align="center" class="livePreview"><a target=”_blank” href="https://dancing-sopapillas-af9c8b.netlify.app/">🖥LIVE SITE
-            PREVIEW🖥</a>
+        <h2 align="center" class="livePreview">
+          <a target="”_blank”" href="https://coin-spy.krisrahnev.com/"
+            >🖥LIVE SITE PREVIEW🖥</a
+          >
         </h2>
-        <h2 align="center" class="livePreview"> <a target=”_blank” href="https://github.com/mrchreesa/weather-app/tree/master">📜CODE
-            PREVIEW📜</a></h2>
+        <h2 align="center" class="livePreview">
+          <a
+            target="”_blank”"
+            href="https://github.com/mrchreesa/coin-spy-typescript"
+            >📜CODE PREVIEW📜</a
+          >
+        </h2>
         <p>
-        The Weather App was build with React and used useReducer hook for state management. The user interface was created with
-        Sass and Material UI. The app fetches data from Weather Forecast API and uses Moment.js to work with time and dates. Day
-        and Night themes are toggled according to the sunset and sunrise times.
+          Coin Spy provides a fundamental analysis of the crypto market. In
+          addition to tracking price, volume and market capitalisation, the user
+          can save favourite coins to profile for later use. User authentication
+          was provided by Firebase v9. The React app was written in TypeScript
+          and Material UI was used for styling components.
         </p>
-      
-      
       </section>
-      <section>
-        <h2>👟 E-commerce page</h2>
+      <section class="hidden">
+        <div class="section-heading">
+          <h2>🧢 E-Commerce Store</h2>
+          <div class="empty-div"></div>
+
+          <img class="dev-icon" src="./images/icons/html.png" alt="" />
+          <img class="dev-icon" src="./images/icons/css3.png" alt="" />
+          <img class="dev-icon" src="./images/icons/javascript.png" alt="" />
+          <img
+            class="dev-icon"
+            src="./images/icons/nextjs-boilerplate-logo.png"
+            alt=""
+          />
+          <img class="dev-icon" src="./images/icons/graphql.png" alt="" />
+          <img class="dev-icon" src="./images/icons/stripe.png" alt="" />
+        </div>
+        <div class="imagesPreview">
+          <img
+            style="width: 49%"
+            src="./images/EComStore1.png"
+            alt="preview"
+            align="center"
+          />
+          <img
+            style="width: 49%"
+            src="./images/EComStore2.png"
+            alt="preview"
+            align="center"
+          />
+          <img
+            style="width: 49%"
+            src="./images/EComStore3.png"
+            alt="preview"
+            align="center"
+          />
+          <img
+            style="width: 49%"
+            src="./images/EComStore4.png"
+            alt="preview"
+            align="center"
+          />
+        </div>
+        <h2 align="center" class="livePreview">
+          <a target="”_blank”" href="https://e-commerce-store-omega.vercel.app/"
+            >🖥LIVE SITE PREVIEW🖥</a
+          >
+        </h2>
+        <h2 align="center" class="livePreview">
+          <a
+            target="”_blank”"
+            href="https://github.com/mrchreesa/e-commerce-store"
+            >📜CODE PREVIEW📜</a
+          >
+        </h2>
+        <p>
+          E-Commerce Store is a web application built with Next.js as full stack
+          framework, Hygraph CMS as headless content management system and
+          Stripe as payment system API. GraphQL is used as query language for
+          fetching server-side props from the CMS. Fast user experience is
+          ensured by server-side rendering by Next.js. After entering to the
+          product list page, the user can see all available products provided by
+          Hygraph. After selecting a product from the list, a product page is
+          displayed with the corresponding URL. The user then can select the
+          style of the product and the desired quantity, after that can add it
+          to the cart. The updated cart component stays persistent if navigating
+          to another page and is saved to LocalStorage. After finishing the
+          order, the user can click on the checkout button and will navigated to
+          Stripe checkout page where a transaction can take place. This web app
+          is hosed on Vercel.
+        </p>
+      </section>
+      <section class="hidden">
+        <div class="section-heading">
+          <h2>🏡 AirBnB Clone</h2>
+          <div class="empty-div"></div>
+
+          <img class="dev-icon" src="./images/icons/html.png" alt="" />
+          <img class="dev-icon" src="./images/icons/css3.png" alt="" />
+          <img class="dev-icon" src="./images/icons/javascript.png" alt="" />
+          <img
+            class="dev-icon"
+            src="./images/icons/nextjs-boilerplate-logo.png"
+            alt=""
+          />
+          <img class="dev-icon" src="./images/icons/sanity.png" alt="" />
+          <img class="dev-icon" src="./images/icons/MUI logo.png" alt="" />
+        </div>
+        <div class="imagesPreview">
+          <img
+            src="./images/preview 1 airbnb.png"
+            alt="preview"
+            align="center"
+          />
+          <img
+            src="./images/preview 2 airbnb.png"
+            alt="preview"
+            align="center"
+          />
+        </div>
+        <h2 align="center" class="livePreview">
+          <a target="”_blank”" href="https://airbnb-clone.krisrahnev.com"
+            >🖥LIVE SITE PREVIEW🖥</a
+          >
+        </h2>
+        <h2 align="center" class="livePreview">
+          <a
+            target="”_blank”"
+            href="https://github.com/mrchreesa/airbnb-frontend"
+            >📜CODE PREVIEW📜</a
+          >
+        </h2>
+        <p>
+          AirBnB Clone as the name suggests is a clone of the property rental
+          site AirBnB. I've followed the original design to the best of my
+          abilities as a reference. Navigating from the landing page you will
+          see the properies list. All properties are being added throught the
+          headless CMS of Sanity.io. After selecting a property of your choice,
+          you will be taken to a page with all the necessary details of that
+          property. There you can find a calendar to select the desired dates
+          for your stay as well as a window which calculates the total cost. On
+          the bottom of the page is Google Maps location of your property.
+        </p>
+      </section>
+      <section class="hidden">
+        <div class="section-heading">
+          <h2>🌤 Weather App</h2>
+          <div class="empty-div"></div>
+
+          <img class="dev-icon" src="./images/icons/html.png" alt="" />
+          <img class="dev-icon" src="./images/icons/css3.png" alt="" />
+          <img class="dev-icon" src="./images/icons/javascript.png" alt="" />
+          <img class="dev-icon" src="./images/icons/react.png" alt="" />
+          <img class="dev-icon" src="./images/icons/sass.png" alt="" />
+        </div>
+        <div class="imagesPreview">
+          <img
+            class="weather-img"
+            src="./images/weather-day.jpg"
+            alt="preview"
+          />
+          <img
+            class="weather-img"
+            src="./images/weather-night.jpg"
+            alt="preview"
+          />
+        </div>
+        <h2 align="center" class="livePreview">
+          <a
+            target="”_blank”"
+            href="https://dancing-sopapillas-af9c8b.netlify.app/"
+            >🖥LIVE SITE PREVIEW🖥</a
+          >
+        </h2>
+        <h2 align="center" class="livePreview">
+          <a
+            target="”_blank”"
+            href="https://github.com/mrchreesa/weather-app/tree/master"
+            >📜CODE PREVIEW📜</a
+          >
+        </h2>
+        <p>
+          The Weather App was build with React and used useReducer hook for
+          state management. The user interface was created with Sass and
+          Material UI. The app fetches data from Weather Forecast API and uses
+          Moment.js to work with time and dates. Day and Night themes are
+          toggled according to the sunset and sunrise times.
+        </p>
+      </section>
+      <section class="hidden">
+        <div class="section-heading">
+          <h2>👟 E-commerce page</h2>
+          <div class="empty-div"></div>
+
+          <img class="dev-icon" src="./images/icons/html.png" alt="" />
+          <img class="dev-icon" src="./images/icons/css3.png" alt="" />
+          <img class="dev-icon" src="./images/icons/javascript.png" alt="" />
+          <img class="dev-icon" src="./images/icons/react.png" alt="" />
+          <img class="dev-icon" src="./images/icons/MUI logo.png" alt="" />
+        </div>
         <div class="imagesPreview">
           <img src="./images/preview 1 ecom.png" alt="preview" align="center" />
           <img src="./images/preview 2 ecom.png" alt="preview" align="center" />
         </div>
-        <h2 align="center" class="livePreview"><a target=”_blank” href="https://e-com.krisrahnev.com">🖥LIVE SITE PREVIEW🖥</a></h2>
-        <h2 align="center" class="livePreview"> <a target=”_blank” href="https://e-com.krisrahnev.com">📜CODE PREVIEW📜</a></h2>
+        <h2 align="center" class="livePreview">
+          <a target="”_blank”" href="https://e-com.krisrahnev.com"
+            >🖥LIVE SITE PREVIEW🖥</a
+          >
+        </h2>
+        <h2 align="center" class="livePreview">
+          <a target="”_blank”" href="https://e-com.krisrahnev.com"
+            >📜CODE PREVIEW📜</a
+          >
+        </h2>
         <p>
-          E-commerce page is a webpage showcasing clean design with interactive user experience.
-          I've build it with React and Material UI components. The page features dark and light themes as well as
-          responsive design.
+          E-commerce page is a webpage showcasing clean design with interactive
+          user experience. I've build it with React and Material UI components.
+          The page features dark and light themes as well as responsive design.
         </p>
-      
-      
       </section>
-      <section class="light">
-        
-
-        
+      <section class="light hidden">
         <h2>🏆 Accomplishments</h2>
 
-        <p>
-          Code Academy Web Development Career Path
-        </p>
+        <p>Code Academy Web Development Career Path</p>
       </section>
 
-      <blockquote>
-        <p>Great things are done by a series of small things brought together <br />-Vincent Van Gogh</p>
+      <blockquote class="hidden">
+        <p>
+          Great things are done by a series of small things brought together
+          <br />-Vincent Van Gogh
+        </p>
       </blockquote>
 
-      <section class="left">
+      <section class="left hidden">
         <h2>🌮 Work History</h2>
 
         <h3>Freelance</h3>
         <p>
-          After successfully completing Code Academy Web Development Career Path in 2020,
-          I’ve been building web apps as a freelancer
-           and preparing myself for getting a full-time job as Web Developer.
+          As a freelancer I’ve built Front-end apps for friends and private
+          clients using HTML, CSS, JavaScript and React and also built
+          Full-stack apps for my portfolio. This position has thought me to be
+          able to communicate clear and in detail with the client and has
+          prepared me to kickstart as a Web Developer in a company environment.
         </p>
-
       </section>
 
-      <blockquote>
+      <blockquote class="hidden">
         <p>Thanks for watching!</p>
       </blockquote>
     </main>

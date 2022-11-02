@@ -130,14 +130,27 @@ const moon2 = new THREE.Mesh(
 
 scene.add(moon2);
 
+function avatarPosition(mediaQuery) {
+  if (mediaQuery.matches) {
+    kris.position.z = -7;
+    kris.position.x = 0;
+    kris.position.y = 2.5;
+  } else {
+    kris.position.z = -5;
+    kris.position.x = 2;
+  }
+}
+const mediaQuery = window.matchMedia("(max-width: 420px)");
+avatarPosition(mediaQuery);
+
 moon2.position.z = 30;
 moon2.position.setX(-30);
 
 moon.position.z = 30;
 moon.position.setX(-10);
 
-kris.position.z = -5;
-kris.position.x = 2;
+// kris.position.z = -5;
+// kris.position.x = 2;
 
 // Scroll Animation
 
@@ -184,3 +197,15 @@ function animate() {
 }
 
 animate();
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry);
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    } else {
+      entry.target.classList.remove("show");
+    }
+  });
+});
+const hiddenElements = document.querySelectorAll(".hidden");
+hiddenElements.forEach((el) => observer.observe(el));
