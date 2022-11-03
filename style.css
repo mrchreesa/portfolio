@@ -314,8 +314,8 @@ blockquote p {
     font-size: 1.8rem;
   }
   .scroll {
-    margin-bottom: 25vh;
-    margin-left: 7px;
+    /* margin-bottom: 25vh; */
+    /* margin-left: 7px; */
     font-size: 1.3rem;
   }
   .section-heading {
