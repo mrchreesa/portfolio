@@ -44,7 +44,7 @@ main {
   width: 100%;
   margin: 0px auto;
   padding: 120px 0px;
-
+  justify-items: start;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
@@ -59,6 +59,7 @@ blockquote {
 }
 h1 {
   font-size: 3.5vw;
+  /* max-width: 5px; */
   line-height: 0.8;
   font-family: "BenchNine", sans-serif;
   font-family: "Press Start 2P", cursive;
@@ -66,16 +67,10 @@ h1 {
   width: max-content;
 }
 .scroll {
-  margin-bottom: 45vh;
   display: flex;
   width: max-content;
-
+  font-size: 1.2vw;
   align-items: flex-end;
-
-  /* animation-name: fadeInOpacity;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in;
-  animation-duration: 7s; */
 
   transform: translateY(3rem);
   animation: fadeIn 2s ease 8s forwards;
@@ -222,12 +217,13 @@ canvas {
 
 header {
   /* width: 90%; */
+  /* max-width: 600px; */
   background: var(--dark-bg);
   grid-column: 2 / span 6;
   font-size: 2.5rem;
   padding: 2rem;
   opacity: 0.9;
-  margin-bottom: var(--spacing);
+  margin-bottom: 35%;
   /* height: 45%; */
 }
 
@@ -310,6 +306,7 @@ blockquote p {
   }
   .header h1 {
     font-size: 7vw;
+    /* max-width: 45px; */
     line-height: none;
     height: 5%;
   }
@@ -359,5 +356,16 @@ blockquote p {
 
   .scroll {
     font-size: 2rem;
+  }
+}
+@media (min-width: 1600px) {
+  .header {
+    /* margin-bottom: 60%; */
+  }
+  .scroll {
+    /* font-size: 1.5rem; */
+  }
+  .header h1 {
+    font-size: 3vw;
   }
 }
