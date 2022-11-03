@@ -300,7 +300,7 @@ blockquote p {
   .header {
     margin-top: 40%;
     text-align: center;
-    margin-bottom: 0;
+    margin-bottom: 10vh;
     opacity: 0.9;
     padding: 1.5rem;
   }
