@@ -307,7 +307,28 @@ blockquote p {
 .weather-img {
   width: 49%;
 }
-
+/* Show more btn */
+#more {
+  display: none;
+}
+#myBtn {
+  font-family: "Orbitron", sans-serif;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+#myBtn:hover {
+  background-color: rgb(185, 185, 185);
+}
+#myBtn1 {
+  font-family: "Orbitron", sans-serif;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+#myBtn1:hover {
+  background-color: rgb(185, 185, 185);
+}
 @media (max-width: 468px) {
   main {
     display: inline !important;

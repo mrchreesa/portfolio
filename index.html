@@ -99,43 +99,65 @@
         </h2>
         <p>
           Appointments booking app (Calendly clone) is a Full-Stack application
-          build with Next js 13 (app dir), MongoDB and Tailwing. Essentially it
-          contains the same functionality as Calendy but with a different UI.
+          build with Next js 13 (app dir), MongoDB and TailwindCSS. Essentially
+          it contains the same functionality as Calendy but with a different UI.
           <br />- The Landing page and About Us are demo components with Full
           Page JS. The real functionality starts next.<br />- Contact Us is a
           contact form with form validation which sends an email with the form
-          input as well as saves it to the admin dashboard. Spam is prevented by
-          crosschecking with the database if there already exists a form
-          submission with the same email or phone number. The user is allowed to
-          submit only one enquiry per email, until the enquiry is marked as done
-          on the database. <br />- Appointments is where the user can find all
-          the available slots for booking. After selecting the slot, details of
-          the user need to be filled in and once submitted a confirmation email
-          is send to verify the user's email in order to prevent spam. In the
-          email there is a link with JWT token, when clicked the booking is
-          verified and taken off the available slots. <br />
-          - Admin. In order to access the admin panel the user needs
-          credentials. Currently you can explore the functionality with: Email:
-          admin@mail.com Pass: 123123123
-          <br />
-          After login in, the admin will receive a session with JWT and will be
-          redirected to the Admin Panel, where on the sidebar can find the
-          following pages:<br />
-          - Dashboard. This is where all the submitted contact forms are being
-          saved as well as sent to an email. <br />- Appointments: Currently is
-          being developed, but thats where all the booked appointments from the
-          client side will live.<br />
-          - Availability. This is where the admin can add available slots for
-          booking. The slots will be displayed on the client side under
-          /appointments.<br />
-          - Register admin. Registration of admins is situated in the admin
-          panel and is available only for Super Admins. A list of all the
-          registered users is displayed aswell. The credentials are securely
-          stored on the database and the password encrypted with bcrypt. If any
-          of the /admin/* routes are tried to be accessed without a session, the
-          user will be redirected to /login
+          input as well as saves it to the admin dashboard<span id="dots"
+            >...</span
+          ><span id="more"
+            >. Spam is prevented by crosschecking with the database if there
+            already exists a form submission with the same email or phone
+            number. The user is allowed to submit only one enquiry per email,
+            until the enquiry is marked as done on the database. <br />-
+            Appointments is where the user can find all the available slots for
+            booking. After selecting the slot, details of the user need to be
+            filled in and once submitted a confirmation email is send to verify
+            the user's email in order to prevent spam. In the email there is a
+            link with JWT token, when clicked the booking is verified and taken
+            off the available slots. <br />
+            - Admin. In order to access the admin panel the user needs
+            credentials. Currently you can explore the functionality with:
+            Email: admin@mail.com Pass: 123123123
+            <br />
+            After login in, the admin will receive a session with JWT and will
+            be redirected to the Admin Panel, where on the sidebar can find the
+            following pages:<br />
+            - Dashboard. This is where all the submitted contact forms are being
+            saved as well as sent to an email. <br />- Appointments: Currently
+            is being developed, but thats where all the booked appointments from
+            the client side will live.<br />
+            - Availability. This is where the admin can add available slots for
+            booking. The slots will be displayed on the client side under
+            /appointments.<br />
+            - Register admin. Registration of admins is situated in the admin
+            panel and is available only for Super Admins. A list of all the
+            registered users is displayed aswell. The credentials are securely
+            stored on the database and the password encrypted with bcrypt. If
+            any of the /admin/* routes are tried to be accessed without a
+            session, the user will be redirected to /login
+          </span>
+          <button onclick="myFunction()" id="myBtn">READ MORE</button>
         </p>
       </section>
+      <script>
+        function myFunction() {
+          var dots = document.getElementById("dots");
+          var moreText = document.getElementById("more");
+          var btnText = document.getElementById("myBtn");
+
+          if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "READ MORE";
+            moreText.style.display = "none";
+          } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "READ LESS";
+            moreText.style.display = "inline";
+          }
+        }
+      </script>
       <section class="hidden">
         <div class="section-heading">
           <h2>🥗 Nutri-Tracker App</h2>
@@ -269,18 +291,39 @@
           framework, Hygraph CMS as headless content management system and
           Stripe as payment system API. GraphQL is used as query language for
           fetching server-side props from the CMS. Fast user experience is
-          ensured by server-side rendering by Next.js. After entering to the
-          product list page, the user can see all available products provided by
-          Hygraph. After selecting a product from the list, a product page is
-          displayed with the corresponding URL. The user then can select the
-          style of the product and the desired quantity, after that can add it
-          to the cart. The updated cart component stays persistent if navigating
-          to another page and is saved to LocalStorage. After finishing the
-          order, the user can click on the checkout button and will navigated to
-          Stripe checkout page where a transaction can take place. This web app
-          is hosed on Vercel.
+          ensured by server-side rendering by Next.js<span id="dots1">...</span
+          ><span id="more1"
+            >. After entering to the product list page, the user can see all
+            available products provided by Hygraph. After selecting a product
+            from the list, a product page is displayed with the corresponding
+            URL. The user then can select the style of the product and the
+            desired quantity, after that can add it to the cart. The updated
+            cart component stays persistent if navigating to another page and is
+            saved to LocalStorage. After finishing the order, the user can click
+            on the checkout button and will navigated to Stripe checkout page
+            where a transaction can take place. This web app is hosed on
+            Vercel.</span
+          >
+          <button onclick="myFunction1()" id="myBtn1">READ MORE</button>
         </p>
       </section>
+      <script>
+        function myFunction1() {
+          var dots = document.getElementById("dots1");
+          var moreText = document.getElementById("more1");
+          var btnText = document.getElementById("myBtn1");
+
+          if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "READ MORE";
+            moreText.style.display = "none";
+          } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "READ LESS";
+            moreText.style.display = "inline";
+          }
+        }
+      </script>
       <section class="hidden">
         <div class="section-heading">
           <h2>🏡 AirBnB Clone</h2>
