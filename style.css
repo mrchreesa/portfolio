@@ -242,10 +242,14 @@ section img {
   align-items: center;
   justify-content: space-between;
 }
-
+.imagesPreview {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 .imagesPreview img {
   width: 49%; /* Default to half width for desktop */
-  height: auto; /* Maintain aspect ratio */
+  height: auto;
 }
 
 .empty-div {
