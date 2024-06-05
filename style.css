@@ -1,15 +1,21 @@
 @import url("https://use.typekit.net/jmk3xov.css");
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+
 html,
 body {
-  /* width: 100%; */
   height: 100%;
+  margin: 0;
   scroll-behavior: smooth;
+  background-color: black;
+  /* background: url("./images/space12.png") no-repeat center center fixed;
+  background-size: cover; */
 }
+
 body {
   position: relative;
 }
+
 canvas {
   position: fixed;
   top: 0;
@@ -33,7 +39,6 @@ canvas {
 :root {
   --dark-bg: rgba(41, 28, 88, 1);
   --spacing: 350px;
-
   font-family: "Abel", "Helvetica Neue", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -60,28 +65,28 @@ blockquote {
   font-weight: 700;
   font-style: normal;
 }
+
 h1 {
   font-size: 3.5vw;
-  /* max-width: 5px; */
   line-height: 0.8;
   font-family: "BenchNine", sans-serif;
   font-family: "Press Start 2P", cursive;
   position: relative;
   width: max-content;
 }
+
 .scroll {
   display: flex;
   width: max-content;
   font-size: 1.2vw;
   align-items: flex-end;
   animation: flickerAnimation 1s infinite;
-
   transform: translateY(3rem);
   animation: fadeIn 2s ease 8s forwards, flickerAnimation 2s infinite 9s;
   opacity: 0;
 }
+
 @keyframes flickerAnimation {
-  /* flame pulses */
   0% {
     opacity: 1;
   }
@@ -92,8 +97,15 @@ h1 {
     opacity: 1;
   }
 }
+
 .line1::before,
-.line1::after {
+.line1::after,
+.line2::before,
+.line2::after,
+.line3::before,
+.line3::after,
+.line4::before,
+.line4::after {
   margin-block: -6px;
   content: " ";
   top: 0;
@@ -102,144 +114,103 @@ h1 {
   bottom: 0;
   position: absolute;
 }
-.line1::before {
+
+.line1::before,
+.line2::before,
+.line3::before,
+.line4::before {
   background-color: var(--dark-bg);
-  animation: typewriter 1.4s steps(7) 1s forwards;
 }
-.line1::after {
+
+.line1::after,
+.line2::after,
+.line3::after,
+.line4::after {
   width: 0.125em;
   background: white;
   opacity: 0;
-  animation: typewriter 1.4s steps(7) 1s forwards, blink 650ms steps(7) infinite;
-  animation-iteration-count: 3.5;
 }
+
 @keyframes typewriter {
   to {
     left: 100%;
   }
 }
+
 @keyframes blink {
   to {
     opacity: 1;
   }
 }
 
-.line2::before,
-.line2::after {
-  margin-block: -6px;
-
-  content: " ";
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  position: absolute;
+.line1::before {
+  animation: typewriter 1.4s steps(7) 1s forwards;
 }
+
+.line1::after {
+  animation: typewriter 1.4s steps(7) 1s forwards, blink 650ms steps(7) infinite;
+  animation-iteration-count: 3.5;
+}
+
 .line2::before {
-  background-color: var(--dark-bg);
   animation: typewriter 1.4s steps(7) 2.6s forwards;
 }
+
 .line2::after {
-  width: 0.125em;
-  background: white;
-  opacity: 0;
   animation: typewriter 1.4s steps(7) 2.6s forwards,
     blink 650ms steps(7) infinite;
   animation-iteration-count: 2;
   animation-delay: 2.6s;
 }
-@keyframes typewriter {
-  to {
-    left: 100%;
-  }
-}
-.line3::before,
-.line3::after {
-  margin-block: -6px;
-  content: " ";
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  position: absolute;
-}
+
 .line3::before {
-  background-color: var(--dark-bg);
   animation: typewriter 1.4s steps(8) 4s forwards;
 }
+
 .line3::after {
-  width: 0.125em;
-  background: white;
-  opacity: 0;
   animation: typewriter 1.4s steps(7) 4s forwards, blink 650ms steps(7) infinite;
   animation-iteration-count: 2.2;
   animation-delay: 4s;
 }
-@keyframes typewriter {
-  to {
-    left: 100%;
-  }
-}
-.line4::before,
-.line4::after {
-  margin-block: -6px;
 
-  content: " ";
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  position: absolute;
-}
 .line4::before {
-  background-color: var(--dark-bg);
   animation: typewriter 1.4s steps(9) 5.5s forwards;
 }
+
 .line4::after {
-  width: 0.125em;
-  background: white;
-  opacity: 0;
   animation: typewriter 1.4s steps(7) 5.5s forwards,
     blink 650ms steps(7) infinite;
   animation-iteration-count: 2.5;
   animation-delay: 5.5s;
 }
-@keyframes typewriter {
-  to {
-    left: 100%;
-  }
-}
+
 .subtitle {
   transform: translateY(3rem);
   animation: fadeIn 2s ease 7s forwards;
   opacity: 0;
 }
+
 @keyframes fadeIn {
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
-canvas {
+
+/* canvas {
   position: fixed;
   top: 0;
   left: 0;
   background-position: center;
-}
-#id {
-  background-color: hsl(0 0% 100%/0.5);
-}
+} */
 
 header {
-  /* width: 90%; */
-  /* max-width: 600px; */
   background: var(--dark-bg);
   grid-column: 2 / span 6;
   font-size: 2.5rem;
   padding: 2rem;
   opacity: 0.9;
   margin-bottom: 35%;
-  /* height: 45%; */
 }
 
 section {
@@ -250,41 +221,55 @@ section {
   line-height: 1.5;
   margin-bottom: 2rem;
 }
+
 section img {
   width: 100%;
   padding-bottom: 10px;
   border-radius: 5px;
 }
+
 .section-heading {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
+.imagesPreview img {
+  width: 49%; /* Default to half width for desktop */
+  height: auto; /* Maintain aspect ratio */
+}
+
 .empty-div {
   display: none;
 }
+
 .dev-icon {
   width: 6%;
 }
+
 .hidden {
   opacity: 0;
   filter: blur(5px);
   transform: translateX(-100%);
   transition: all 1s;
 }
+
 .show {
   opacity: 1;
   filter: blur(0);
   transform: translateX(0);
 }
+
 .livePreview a {
   color: rgb(171, 161, 209);
   letter-spacing: 5px;
 }
+
 .livePreview a:hover {
   color: white;
   transition: all 0.5s;
 }
+
 blockquote {
   margin: 0;
   padding: 0;
@@ -298,37 +283,33 @@ blockquote p {
   font-size: 3rem;
   display: inline;
   line-height: 1;
-  /* padding-inline: 10px; */
 }
 
 .left {
   grid-column: 6 / 12;
 }
+
 .weather-img {
   width: 49%;
 }
-/* Show more btn */
+
 #more {
   display: none;
 }
-#myBtn {
-  font-family: "Orbitron", sans-serif;
-  border: none;
-  cursor: pointer;
-  transition: all 0.2s;
-}
-#myBtn:hover {
-  background-color: rgb(185, 185, 185);
-}
+
+#myBtn,
 #myBtn1 {
   font-family: "Orbitron", sans-serif;
   border: none;
   cursor: pointer;
   transition: all 0.2s;
 }
+
+#myBtn:hover,
 #myBtn1:hover {
   background-color: rgb(185, 185, 185);
 }
+
 @media (max-width: 468px) {
   main {
     display: inline !important;
@@ -340,9 +321,12 @@ blockquote p {
     opacity: 0.9;
     padding: 1.5rem;
   }
+  #bg {
+    width: 200vw !important;
+    height: -webkit-fill-available !important;
+  }
   .header h1 {
     font-size: 7vw;
-    /* max-width: 45px; */
     line-height: none;
     height: 5%;
   }
@@ -350,28 +334,29 @@ blockquote p {
     font-size: 1.8rem;
   }
   .scroll {
-    /* margin-bottom: 25vh; */
-    /* margin-left: 7px; */
     font-size: 1.3rem;
   }
   .section-heading {
     flex-wrap: wrap;
   }
   .dev-icon {
-    width: 10%;
-    height: 10px;
-    /* max-height: 10px; */
+    width: 15%;
+    object-fit: contain;
+    margin-bottom: 10px;
   }
   .empty-div {
     display: flex;
     width: 100%;
   }
+  .imagesPreview img {
+    width: 100%; /* Full width on mobile */
+  }
 }
+
 @media (max-width: 828px) and (min-width: 468px) {
   main {
     display: inline !important;
   }
-
   .header {
     height: 40vh;
     width: 45%;
@@ -379,29 +364,21 @@ blockquote p {
     margin-bottom: 0;
     opacity: 0.9;
   }
-
   .header h1 {
     font-size: 4.5vw;
     padding-bottom: 20px;
     line-height: none;
     height: 5%;
   }
-
   .subtitle {
     font-size: 3rem;
   }
-
   .scroll {
     font-size: 2rem;
   }
 }
+
 @media (min-width: 1600px) {
-  .header {
-    /* margin-bottom: 60%; */
-  }
-  .scroll {
-    /* font-size: 1.5rem; */
-  }
   .header h1 {
     font-size: 3vw;
   }
